@@ -110,20 +110,26 @@
 
 
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Zhoujunjiecn Blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="版本更迭从2007年07月，flex第一版本的工作草案发布，到2012年09月，flex最新版本成为候选推荐。flex主要经历了三个版本。 旧版本 display: box; display: inline-blox; IE不支持   安卓支持： 2.1 ～ 4.3，IOS支持： 3.2 ～ 6.1，需加 -webkit- 前缀  混合版本 display: flexbox; display: i">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS弹性盒模型flex">
+<meta property="og:url" content="http://yoursite.com/2019/04/24/flexbox/index.html">
 <meta property="og:site_name" content="Zhoujunjiecn Blog">
+<meta property="og:description" content="版本更迭从2007年07月，flex第一版本的工作草案发布，到2012年09月，flex最新版本成为候选推荐。flex主要经历了三个版本。 旧版本 display: box; display: inline-blox; IE不支持   安卓支持： 2.1 ～ 4.3，IOS支持： 3.2 ～ 6.1，需加 -webkit- 前缀  混合版本 display: flexbox; display: i">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://mdn.mozillademos.org/files/12998/flexbox.png">
+<meta property="og:updated_time" content="2019-04-25T02:22:20.636Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Zhoujunjiecn Blog">
+<meta name="twitter:title" content="CSS弹性盒模型flex">
+<meta name="twitter:description" content="版本更迭从2007年07月，flex第一版本的工作草案发布，到2012年09月，flex最新版本成为候选推荐。flex主要经历了三个版本。 旧版本 display: box; display: inline-blox; IE不支持   安卓支持： 2.1 ～ 4.3，IOS支持： 3.2 ～ 6.1，需加 -webkit- 前缀  混合版本 display: flexbox; display: i">
+<meta name="twitter:image" content="https://mdn.mozillademos.org/files/12998/flexbox.png">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="http://yoursite.com/2019/04/24/flexbox/">
 
 
 
@@ -133,7 +139,7 @@
   };
 </script>
 
-  <title>Zhoujunjiecn Blog</title>
+  <title>CSS弹性盒模型flex | Zhoujunjiecn Blog</title>
   
 
 
@@ -181,8 +187,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -219,7 +224,7 @@
         
         
           
-          <li class="menu-item menu-item-home menu-item-active">
+          <li class="menu-item menu-item-home">
 
     
     
@@ -281,9 +286,9 @@
           
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -315,10 +320,8 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/04/24/flexbox/" class="post-title-link" itemprop="http://yoursite.com/index.html">CSS弹性盒模型flex</a>
+          <h1 class="post-title" itemprop="name headline">CSS弹性盒模型flex
+
               
             
           </h1>
@@ -393,9 +396,7 @@
       
 
       
-        
-          
-            <h3 id="版本更迭"><a href="#版本更迭" class="headerlink" title="版本更迭"></a>版本更迭</h3><p>从2007年07月，flex第一版本的工作草案发布，到2012年09月，flex最新版本成为候选推荐。flex主要经历了三个版本。</p>
+        <h3 id="版本更迭"><a href="#版本更迭" class="headerlink" title="版本更迭"></a>版本更迭</h3><p>从2007年07月，flex第一版本的工作草案发布，到2012年09月，flex最新版本成为候选推荐。flex主要经历了三个版本。</p>
 <h4 id="旧版本-display-box-display-inline-blox"><a href="#旧版本-display-box-display-inline-blox" class="headerlink" title="旧版本 display: box; display: inline-blox;"></a>旧版本 display: box; display: inline-blox;</h4><blockquote>
 <p>IE不支持</p>
 </blockquote>
@@ -498,8 +499,6 @@
 </li>
 </ol>
 
-          
-        
       
     </div>
 
@@ -522,12 +521,12 @@
       
 
       
+      
+      
 
       
 
       
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -537,14 +536,15 @@
   </article>
 
 
-    
-  </section>
-
-  
+  </div>
 
 
           </div>
           
+
+  
+
+
 
         </div>
         
@@ -565,8 +565,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -610,6 +619,22 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#版本更迭"><span class="nav-number">1.</span> <span class="nav-text">版本更迭</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#旧版本-display-box-display-inline-blox"><span class="nav-number">1.1.</span> <span class="nav-text">旧版本 display: box; display: inline-blox;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#混合版本-display-flexbox-display-inline-flexbox"><span class="nav-number">1.2.</span> <span class="nav-text">混合版本 display: flexbox; display: inline-flexbox;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#新版本-display-flex-display-inline-flex"><span class="nav-number">1.3.</span> <span class="nav-text">新版本 display: flex; display: inline-flex;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#不影响弹性盒子的属性"><span class="nav-number">1.4.</span> <span class="nav-text">不影响弹性盒子的属性</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基本概念"><span class="nav-number">2.</span> <span class="nav-text">基本概念</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#弹性容器-Flex-container"><span class="nav-number">2.0.1.</span> <span class="nav-text">弹性容器(Flex container)</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#弹性项目-Flex-item"><span class="nav-number">2.0.2.</span> <span class="nav-text">弹性项目(Flex item)</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#轴-Axis"><span class="nav-number">2.0.3.</span> <span class="nav-text">轴(Axis)</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#方向-Direction"><span class="nav-number">2.0.4.</span> <span class="nav-text">方向(Direction)</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#行-Line"><span class="nav-number">2.0.5.</span> <span class="nav-text">行(Line)</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#尺寸-Dimension"><span class="nav-number">2.0.6.</span> <span class="nav-text">尺寸(Dimension)</span></a></li></ol></li></ol><li class="nav-item nav-level-3"><a class="nav-link" href="#容器属性"><span class="nav-number">3.</span> <span class="nav-text">容器属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#项目属性"><span class="nav-number">4.</span> <span class="nav-text">项目属性</span></a></li></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
@@ -759,6 +784,10 @@
 
 
   
+  <script src="/js/src/scrollspy.js?v=6.6.0"></script>
+<script src="/js/src/post-details.js?v=6.6.0"></script>
+
+
 
   
 
