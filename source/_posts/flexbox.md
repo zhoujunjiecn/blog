@@ -33,6 +33,7 @@ categories:
 ``` bash
 	.display-flex {
 	  display: -webkit-box;
+	  display: -moz-box;
 	  display: -ms-flexbox;
 	  display: -webkit-flex;
 	  display: flex;
@@ -45,6 +46,7 @@ categories:
 
 	.display-inline-flex {
 	  display: -webkit-inline-box;
+	  display: -moz-inline-box;
 	  display: -ms-inline-flexbox;
 	  display: -webkit-inline-flex;
 	  display: inline-flex;
@@ -135,6 +137,7 @@ categories:
 
 	.justify-content-center {
     -webkit-box-pack: center;
+    -moz-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
     justify-content: center;
@@ -142,6 +145,7 @@ categories:
 
 	.justify-content-end {
     -webkit-box-pack: end;
+    -moz-box-pack: end;
     -ms-flex-pack: end;
     -webkit-justify-content: flex-end;
     justify-content: flex-end;
@@ -149,6 +153,7 @@ categories:
 
 	.justify-content-justify {
     -webkit-box-pack: justify;
+    -moz-box-pack: justify;
     -ms-flex-pack: justify;
     -webkit-justify-content: space-between;
     justify-content: space-between;
@@ -172,6 +177,7 @@ categories:
 
 	.align-items-start {
      -webkit-box-align: start;
+     -moz-box-align: start;
      -ms-flex-align: start;
      -webkit-align-items: flex-start;
      align-items: flex-start;
@@ -179,6 +185,7 @@ categories:
 
 	.align-items-center {
      -webkit-box-align: center;
+     -moz-box-align: center;
      -ms-flex-align: center;
      -webkit-align-items: center;
      align-items: center;
@@ -186,6 +193,7 @@ categories:
 
 	.align-items-end {
      -webkit-box-align: end;
+     -moz-box-align: end;
      -ms-flex-align: end;
      -webkit-align-items: flex-end;
      align-items: flex-end;
@@ -193,6 +201,7 @@ categories:
 
 	.align-items-baseline {
      -webkit-box-align: baseline;
+     -moz-box-align: baseline;
      -ms-flex-align: baseline;
      -webkit-align-items: baseline;
      align-items: baseline;
@@ -330,6 +339,7 @@ categories:
 
 	.flex-auto {
      -webkit-box-flex: auto;
+     -moz-box-flex: auto;
      -ms-flex: auto;
      -webkit-flex: auto;
      flex: auto;
@@ -337,6 +347,7 @@ categories:
 
 	.flex-1 {
      -webkit-box-flex: 1;
+     -moz-box-flex: 1;
      -ms-flex: 1;
      -webkit-flex: 1;
      flex: 1;
@@ -361,6 +372,7 @@ categories:
 
 	.order-2 {
     -webkit-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2;
     -ms-flex-order: 2;
     -webkit-order: 2;
     order: 2;
