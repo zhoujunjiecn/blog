@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>模联社</title>
+    <script>
+        // set 1rem = viewWidth / 10
+        var docEl = document.documentElement;
+        function setRemUnit () {
+            var rem = docEl.clientWidth / 10;
+            docEl.style.fontSize = rem + 'px';
+        }
+        setRemUnit();
+
+        // reset rem unit on page resize
+        window.addEventListener('resize', setRemUnit);
+        window.addEventListener('pageshow', function (e) {
+            if (e.persisted) {
+                setRemUnit();
+            }
+        });
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            line-height: 1;
+            background-color: #004a86;
+        }
+
+        .header {
+            position: relative;
+            padding: 1rem 1.25rem 0;
+            z-index: 1;
+        }
+
+        .head-img {
+            width: 100%;
+            display: block;
+        }
+
+        .content {
+            position: relative;
+            margin: -0.83rem 1.25rem 0;
+            padding: 1.3rem 0.95rem 0.6rem;
+            border-radius: 0.56rem;
+            font-size: 0.32rem;
+            color: #0f2a40;
+            line-height: 0.53rem;
+            text-align: justify;
+            background-color: #fff;
+        }
+
+        .content-item {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: flex;
+            padding-top: 4px;
+        }
+        
+        .content-item-con {
+            -webkit-box-flex: 1;
+            flex: 1;
+        }
+
+        .opacity-text {
+            opacity: 0;
+        }
+
+        .footer {
+            padding-top: 1.28rem;
+            padding-bottom: 1rem;
+            text-align: center;
+            color: #fff;
+        }
+
+        .ch {
+            line-height: 1.6;
+            font-size: 0.3rem;
+        }
+
+        .en {
+            line-height: 1;
+            font-size: 0.22rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="./images/himg1.png" class="head-img" alt="模联社01" />
+        <img src="./images/himg2.png" class="head-img" alt="模联社02" />
+        <img src="./images/himg3.png" class="head-img" alt="模联社03" />
+        <img src="./images/himg4.png" class="head-img" alt="模联社04" />
+        <img src="./images/himg5.png" class="head-img" alt="模联社05" />
+    </header>
+
+    <section class="content">
+        <dl class="content-item">
+            <dt class="content-item-tit">目<span class="opacity-text">目的</span>的：</dt>
+            <dd class="content-item-con">培养学生的全球性思维和交流 能力，开阔视野、激发学习潜 能，锻炼领袖才能。</dd>
+        </dl>
+        <dl class="content-item">
+            <dt class="content-item-tit">活动内容：</dt>
+            <dd class="content-item-con">学生扮演各国的外交官，代表 其本国利益，研讨大会议题。</dd>
+        </dl>
+        <dl class="content-item">
+            <dt class="content-item-tit">招募对象：</dt>
+            <dd class="content-item-con">热情、努力、积极进取，耐心 细心、责任心强，具有团队合 作精神，有组织能力和自我管 理意识，模联等你！</dd>
+        </dl>
+        <dl class="content-item">
+            <dt class="content-item-tit">职<span class="opacity-text">职位</span>位：</dt>
+            <dd class="content-item-con">社长、副社长、各级部长。</dd>
+        </dl>
+    </section>
+
+    <footer class="footer">
+        <p class="ch">加入我们，共创明天。来吧，一起为梦想拼搏！</p>
+        <p class="en">JOIN US AND CREATE TOMORROW TOGETHER</p>
+        <p class="en">COME ON,FIGHT FOR YOUR DREAM!</p>
+    </footer>
+</body>
+</html>
